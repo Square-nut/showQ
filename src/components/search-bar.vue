@@ -1,8 +1,8 @@
 <template>
 	<div class="searchBar">
 		<input type="text" v-model="searchText" />
-		<i>查询</i>
-		<!--<iconSvg name='searchIcon'>查询</iconSvg>-->
+		<i><iconSvg name='icon-artboard9' width="12" height="12"></iconSvg>查询</i>
+		<!---->
 	</div>
 </template>
 
@@ -38,7 +38,8 @@
 		position: relative;
 	}
 	input{
-		width: 100%;
+		width: calc(100% - 1,4rem);
+		padding: 0 .7rem;
 		border-radius: 3px;
 		border: 1px solid #cdcdcd;
 		background: #CDCDCD;
@@ -49,5 +50,8 @@
 		font-size: 12px;
 		font-style: normal;
 		color: #ffffff;
+	}
+	svg{
+		/*fill: #FFFFFF;*/
 	}
 </style>

@@ -12,19 +12,16 @@
 			</div>
 			<div class="top-rightBtn top-child">
 				<slot name="top-rightBtn">
-					<div class="">+
-						<iconSvg name="add"></iconSvg>
-						<ul v-show="false">
-							<!--<li v-for="v in addList">
-								<router-link to="v.url"><iconSvg name='v.img'></iconSvg>{{ v.name }}</router-link>
-							</li>-->
-							<li><iconSvg name=''></iconSvg>创建群聊</li>
-							<li><iconSvg name=''></iconSvg>加好友/群</li>
-							<li><iconSvg name=''></iconSvg>扫一扫</li>
-							<li><iconSvg name=''></iconSvg>面对面快传</li>
-							<li><iconSvg name=''></iconSvg>付款</li>
-							<li><iconSvg name=''></iconSvg>拍照</li>
-							<li><iconSvg name=''></iconSvg>面对面红包</li>
+					<div class="">
+						<iconSvg name="icon-create" class="add-btn"></iconSvg>
+						<ul class="add-menu">
+							<li><iconSvg name='icon-addfriend'></iconSvg>创建群聊</li>
+							<li><iconSvg name='icon-addfriend'></iconSvg>加好友/群</li>
+							<li><iconSvg name='icon-scan'></iconSvg>扫一扫</li>
+							<li><iconSvg name='icon-send'></iconSvg>面对面快传</li>
+							<li><iconSvg name='icon-barcode'></iconSvg>付款</li>
+							<li><iconSvg name='icon-camera'></iconSvg>拍照</li>
+							<li><iconSvg name='icon-redenvelope'></iconSvg>面对面红包</li>
 						</ul>
 					</div>
 				</slot>
@@ -49,5 +46,11 @@
 	}
 	.top-child{
 		flex: 1;
+	}
+	.add-menu{
+		display: none;
+	}
+	.add-btn:hover + ul{
+		display: block;
 	}
 </style>

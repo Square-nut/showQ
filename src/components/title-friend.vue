@@ -11,7 +11,7 @@
 				</div>
 				<p class="chatPanel-down">
 					{{ v.chat }}
-					<iconSvg name="redPoint" v-if="showRed"></iconSvg>
+					<iconSvg name="icon-point" v-if="showRed"></iconSvg>
 				</p>
 			</div>
 		</li>	
