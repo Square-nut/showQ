@@ -25,8 +25,13 @@
 </script>
 
 <style scoped>
-	.navigate{
-		
+	.nav{
+		display: -webkit-flex; /* Safari */
+		display: flex;
+	}
+	.nav .nav-btn{
+		justify-content: space-between;
+		flex: 1;
 	}
 	.router-link-active{
 		color: deepskyblue;

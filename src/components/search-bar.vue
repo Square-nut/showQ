@@ -27,7 +27,7 @@
 					if(res.status == "200"){
 						this.$emit('backData', res.data)
 					}
-				});
+				})
 			}
 		}
 	}
@@ -44,5 +44,10 @@
 		background: #CDCDCD;
 	}
 	i{
+		position: absolute;
+		top: 0;
+		font-size: 12px;
+		font-style: normal;
+		color: #ffffff;
 	}
 </style>
