@@ -2,7 +2,7 @@
 	<div class="top">
 			<div class="top-leftBtn top-child">
 				<slot name="top-leftBtn">
-					<router-link to='chatList'><iconSvg name="setting"></iconSvg>设置</router-link>
+					<router-link to='chatList'><img src=""/>设置</router-link>
 				</slot>
 			</div>
 			<div class="top-center top-child">

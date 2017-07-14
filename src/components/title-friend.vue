@@ -1,6 +1,6 @@
 <template>
 	<ul>
-		<li class="title" v-for="v in data" @click="openChatPanel">
+		<li class="title" v-for="v in data" @click="openChatPanel(v.id)">
 			<div class="friendIcon">
 				<img :src="v.src"/>
 			</div>
@@ -32,8 +32,9 @@
 			iconSvg
 		},
 		methods: {
-			openChatPanel(){
-				this.$router.push({path: this.path, query:{friendId:"000"}})
+			openChatPanel(e){
+				let friendId = e.target
+				this.$router.push({path: this.path, query:{friendId: friendId}})
 			}
 		}
 	}

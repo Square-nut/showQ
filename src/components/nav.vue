@@ -1,15 +1,15 @@
 <template>
 	<div class="nav">
 		<router-link class="nav-btn" to='chatList'>
-			<iconSvg></iconSvg>
+			<iconSvg name="icon-talk"></iconSvg>
 			消息
 		</router-link>
 		<router-link class="nav-btn" to='contact'>
-			<iconSvg></iconSvg>
+			<iconSvg name="icon-contact"></iconSvg>
 			联系人
 		</router-link>
 		<router-link class="nav-btn" to='dynamic'>
-			<iconSvg></iconSvg>
+			<iconSvg name="icon-star"></iconSvg>
 			动态
 		</router-link>
 	</div>
