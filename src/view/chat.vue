@@ -10,7 +10,7 @@
 		</top>
 		<searchBar></searchBar>
 		<div class="talk-history">
-			<div class="title" v-for="v in chatInfo">
+			<div class="title" :class="isMine" v-for="v in chatInfo">
 				<div class="time" v-if="">
 					{{ v.time }}
 				</div>
@@ -31,7 +31,8 @@
 	export default {
 		data(){
 			return {
-				chatInfo: null
+				chatInfo: null,
+				isMine: false
 			}
 		},
 		methods:{
@@ -51,4 +52,7 @@
 </script>
 
 <style>
+	.isMine{
+		direction: rtl;
+	}
 </style>
